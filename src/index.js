@@ -27,7 +27,7 @@ class RockPaperScissors {
             mainElement.appendChild(br4);
             var linea = document.createElement('hr');
         mainElement.appendChild(linea);
-        container.append(mainElement);
+        container.append(this.mainElement);
     }
     randomDraw(){
         const v = Math.floor(3 * Math.random());
@@ -36,7 +36,7 @@ class RockPaperScissors {
     buttonPressed(event) {
         this.randomDraw();
         this.result.textContent = this.opponentChoiche;
-        /*devo decidere chi vince*/
+        /*devo decidere chi vince, uso this.mainelement in document.giro + queryselector('input[name=bottone]:checked')*/
 
 
         //window.alert(this.opponentChoiche)
